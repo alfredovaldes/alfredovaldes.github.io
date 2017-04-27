@@ -18,12 +18,12 @@ for (var i = 0; i < segNum; i++) {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   strokeWeight(9);
-  stroke(255, 100);
+  //stroke(255, 100);
 }
 
 function draw() {
-  background(0);
-  fill(random(0,255),random(0,255),random(0,255));
+  stroke(random(0,255),random(0,255),random(0,255),100);
+  background(0);  
   dragSegment(0, mouseX, mouseY);
   for( var i=0; i<x.length-1; i++) {
     dragSegment(i+1, x[i], y[i]);
