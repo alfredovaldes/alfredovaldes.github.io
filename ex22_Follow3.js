@@ -16,7 +16,7 @@ for (var i = 0; i < segNum; i++) {
 }
 
 function setup() {
-  createCanvas(710, 400);
+  createCanvas(windowWidth, windowHeight);
   strokeWeight(9);
   stroke(255, 100);
 }
@@ -44,4 +44,7 @@ function segment(x, y, a) {
   rotate(a);
   line(0, 0, segLength, 0);
   pop();
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
